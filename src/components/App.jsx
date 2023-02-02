@@ -53,7 +53,7 @@ export const App = () => {
           <li
             key={item.id}
             onClick={() => handlrDeleteProduct(item.id)}
-            style={{ cursor: 'pointer' }}
+            style={{ cursor: 'pointer', color: 'red' }}
           >
             {item.name}
           </li>
