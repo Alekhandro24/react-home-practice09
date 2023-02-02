@@ -9,7 +9,7 @@ export const App = () => {
   const [count, setCount] = useState('');
   const [newProduct, setNewProduct] = useState('');
   const { data = [], isLoading } = useGetGoodsQuery(count);
-  const [addProduct, { isError }] = useAddProductMutation();
+  const [addProduct] = useAddProductMutation();
   const [deleteProduct] = useDeleteProductMutation();
 
   const handleAddProduct = async () => {
